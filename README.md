@@ -347,7 +347,7 @@ After logging in, you will be redirected to the Admin Panel.
 This will open the **Add Data Source** form.
 ![Image Description](datasource.png)
 
-Fill in the required database connection details:
+Fill in the required database connection details and click  <font color="skyblue">**next**</font>:
 
 ## Data Source Fields Explanation
 
@@ -424,7 +424,11 @@ Default MySQL port:
 3306
 ```
 
-If the database server uses a custom port, provide that value instead.
+If the database server uses a custom port, provide that value instead. </br>
+After ninishing the first step and clicking next, if the connection succeeds you will go to the second step. Here you will select the databses to be used, the **Householde Database** and **Individual Database**
+
+![Image Description](last_step.png)
+
 
 ---
 
