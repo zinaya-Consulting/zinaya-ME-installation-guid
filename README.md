@@ -132,9 +132,8 @@ Extract the provided ZIP package:
 
 This will create a folder named:
 
-```bash
 zinaya-ME
-```
+
 
 ---
 
