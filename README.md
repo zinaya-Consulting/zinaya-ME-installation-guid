@@ -352,7 +352,9 @@ Fill in the required database connection details and click  <font color="skyblue
 
 ### 1. Host Address
 
-The IP address of the server where the survey Mysql database is installed.
+The IP address of the server where the survey Mysql database is installed. </br>
+
+**NOTE**:  This is sever address, avoid using *localhost* or *127.0.0.1* 
 
 Examples:
 
