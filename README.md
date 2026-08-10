@@ -127,13 +127,13 @@ sudo apt install -y p7zip-full
 Extract the provided ZIP package:
 
 ```bash
-7z x config.zip
+7z x zinaya-ME.zip
 ```
 
 This will create a folder named:
 
 ```bash
-config
+zinaya-ME
 ```
 
 ---
@@ -143,7 +143,7 @@ config
 Move into the extracted directory:
 
 ```bash
-cd config
+cd zinaya-ME
 ```
 
 ---
