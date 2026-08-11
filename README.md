@@ -441,3 +441,56 @@ After filling in all required fields:
 2. Click the **Save** button
 
 Once saved successfully, the data source will appear in the data source table and become available for dashboard operations.
+
+# NOTE
+In the environment file, there is variable named `REFRESF_RATE`, this variable controls how frequent the dashboard data gets refreshed. By default, the syatem is deployed with `REFRESH_RATE=5`, this refreshes the sytem every 5 minutes. If you want to edit the refresh rate, navigate to zinaya-ME directory then follow the next steps.
+
+#### Step 1: Edit environment veriable
+
+```
+sudo nano .env
+```
+
+#### Step 2: Restart data service file to apply the new rate
+```
+sudo systemctl restart Zinaya_dhs_data
+``` 
+
+# Patching the system
+when there is changes required to the whole system e.g., Bug fix, new version. You will be provided with 2 or 1 container.
+
+## 1. Patching Dashboard
+When there is updates for the dashboard, you will be provided with new container named `dhs_dashboard.tar`. Once this is recieved, load/transfer the .tar file the server where Zinaya-ME is installed and excete the following commands in sequence.
+
+#### 1. Load the Image
+
+```
+sudo docker load -i dhs_dashboard.tar
+```
+
+#### 2. Reload the demon
+```
+sudo systemctl daemon-reload
+```
+#### 3. Restart the dashboard service file
+```
+sudo systemctl restart Zinaya_dhs_dashboard
+```
+
+## Patching Data
+When there is updates for the data, you will be provided with new container named `dhs_data.tar`. Once this is recieved, load/transfer the .tar file the server where Zinaya-ME is installed and excete the following commands in sequence.
+
+#### 1. Load the Image
+
+```
+sudo docker load -i dhs_data.tar
+```
+
+#### 2. Reload the demon
+```
+sudo systemctl daemon-reload
+```
+#### 3. Restart the dashboard service file
+```
+sudo systemctl restart Zinaya_dhs_data
+```
