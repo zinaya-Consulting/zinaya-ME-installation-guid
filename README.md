@@ -7,26 +7,26 @@ The platform combines:
 * A **FastAPI-powered data service**
 * A **Flask-based interactive dashboard**
 * A **MySQL backend**
-* Automated database initialization
+<!-- * Automated database initialization
 * Dockerized deployment
-* Linux `systemd` service integration for production environments
+* Linux `systemd` service integration for production environments -->
 
 Zinaya ME is designed to simplify deployment and operational management of survey monitoring systems by providing a fully automated installation workflow using Docker and shell scripting.
 
 ## Key Features
 
 * Real-time survey monitoring dashboard
-* Automated MySQL database initialization and seeding
+<!-- * Automated MySQL database initialization and seeding -->
 * Docker-based deployment architecture
-* Persistent database storage
-* Production-ready Linux service management
-* Configurable environment variables using `.env`
-* Automated installation and setup script
+<!-- * Persistent database storage -->
+<!-- * Production-ready Linux service management -->
+<!-- * Configurable environment variables using `.env` -->
+<!-- * Automated installation and setup script
 * Shared Docker networking between services
 * Built-in service restart and recovery
-* Configurable ports and deployment settings
+* Configurable ports and deployment settings -->
 
-## Architecture
+<!-- ## Architecture
 
 The platform consists of:
 
@@ -53,9 +53,9 @@ The platform consists of:
     * tables
     * default users
     * metadata
-    * seed data
+    * seed data -->
 
-## Deployment
+<!-- ## Deployment
 
 Zinaya ME is designed for Ubuntu/Linux servers and supports:
 
@@ -63,7 +63,7 @@ Zinaya ME is designed for Ubuntu/Linux servers and supports:
 * Docker Compose
 * Systemd service management
 
-The deployment process is fully automated through a shell installer script.
+The deployment process is fully automated through a shell installer script. -->
 
 ## Intended Use
 
@@ -76,7 +76,7 @@ Zinaya ME is suitable for:
 * Real-time survey performance dashboards
 * Centralized survey administration systems
 
-## Technologies Used
+<!-- ## Technologies Used
 
 * Python
 * Flask
@@ -85,7 +85,7 @@ Zinaya ME is suitable for:
 * Docker
 * Docker Compose
 * Systemd
-* Bash scripting
+* Bash scripting -->
 
 ## Goal
 
@@ -93,9 +93,9 @@ The goal of Zinaya ME is to provide a portable, reproducible, and production-rea
 
 # Installation Steps
 
-## Installation Guide
+<!-- ## Installation Guide -->
 
-You are provided with a ZIP package containing all required configuration files, deployment scripts, database initialization files, and Docker container images needed to run the Zinaya ME platform.
+<!-- You are provided with a ZIP package containing all required configuration files, deployment scripts, database initialization files, and Docker container images needed to run the Zinaya ME platform.
 
 The package includes files such as:
 
@@ -108,7 +108,7 @@ The package includes files such as:
 * `dhs_data.tar`
 * `dhs_dashboard.tar`
 
-These files are used to automatically configure and deploy the Zinaya ME dashboard, data API, and database services on an Ubuntu/Linux server using Docker.
+These files are used to automatically configure and deploy the Zinaya ME dashboard, data API, and database services on an Ubuntu/Linux server using Docker. -->
 ## Step 1 — Install Required Extraction Tool
 
 Before starting the installation, ensure that the `7z` extraction tool is installed on your Ubuntu/Linux server.
@@ -165,7 +165,7 @@ Start the automated deployment process:
 sudo ./config.sh
 ```
 
-The script will automatically:
+<!-- The script will automatically:
 
 * Install Docker (if not already installed)
 * Configure Docker services
@@ -173,7 +173,7 @@ The script will automatically:
 * Initialize the MySQL database
 * Load the provided Docker images
 * Create and start system services
-* Deploy the Zinaya ME dashboard and data API services
+* Deploy the Zinaya ME dashboard and data API services -->
 
 ## Accessing the Zinaya ME Dashboard
 
@@ -235,7 +235,7 @@ http://192.168.1.10:18000
 
 Open the URL in your browser to access the Zinaya ME dashboard.
 
-## Troubleshooting — Port Already in Use
+<!-- ## Troubleshooting — Port Already in Use
 
 If the installation script reports that a port is already in use, you will need to change the conflicting port in the `.env` file.
 
@@ -304,14 +304,15 @@ In `nano`:
 ## Step 5 — Run the Installation Again
 
 ```bash id="jlwm1p"
-sudo ./config.sh
+sudo ./config.sh 
 ```
+-->
 
 The installation will continue using the updated ports.
 
-## Additional Support
+## Need Support?
 
-If the issue persists after following the troubleshooting steps, or if you encounter a different installation error, please contact support by sending an email to:
+If there is any installation error, please contact support by sending an email to:
 
 ```text id="5jlwmc"
 sjnitiema@hotmail.com
