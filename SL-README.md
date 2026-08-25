@@ -1,17 +1,17 @@
 # zinaya-ME-installation-guid
 
 **Zinaya ME** is a containerized monitoring and evaluation dashboard platform designed for managing, tracking, and visualizing survey fieldwork operations in real time.
-
+<!-- 
 The platform combines:
 
 * A **FastAPI-powered data service**
 * A **Flask-based interactive dashboard**
-* A **MySQL backend**
+* A **MySQL backend** -->
 <!-- * Automated database initialization
 * Dockerized deployment
 * Linux `systemd` service integration for production environments -->
 
-Zinaya ME is designed to simplify deployment and operational management of survey monitoring systems by providing a fully automated installation workflow using Docker and shell scripting.
+<!-- Zinaya ME is designed to simplify deployment and operational management of survey monitoring systems by providing a fully automated installation workflow using Docker and shell scripting. -->
 
 ## Key Features
 
@@ -127,7 +127,7 @@ sudo apt install -y p7zip-full
 Extract the provided ZIP package:
 
 ```bash
-7z x SL-zinaya-ME.zip
+7z x zinaya-ME.zip
 ```
 
 This will create a folder named:
@@ -142,7 +142,7 @@ zinaya-ME
 Move into the extracted directory:
 
 ```bash
-cd SL-zinaya-ME
+cd zinaya-ME
 ```
 
 ---
