@@ -495,3 +495,52 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl restart SL_dhs_data
 ```
+# Virtualizing the system access via appache
+
+Since the monitoring tool is mapped to the server address with the port, accessing it to the public with address and the port is not secure. 
+
+## Step 1: Install Apache modules enabled
+```bash
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod headers
+```
+## Step 2: Edit you virtual host file
+if you have a custom virtual hist file, it is the one to edit but if not, you will have to edit the default virtual host file. The next command opens default virtual host file in nano.
+
+```bash
+nano /etc/apache2/sites-available/000-default.conf 
+```
+
+After opening the file, past the following line in the opened virtual host file, add your prefered header. Here we user `sl` but you can use any header you want.
+
+```bash
+ProxyPreserveHost On
+RequestHeader set X-Forwarded-Prefix "/sl"
+ProxyPass        /sl http://localhost:15001
+ProxyPassReverse /sl http://localhost:15001
+<Location /sl/>
+     Require all granted
+</Location>
+````
+
+
+
+**Note**
+* If you have custom virtual host file, replace the default file with you custom file ```nano /etc/apache2/sites-available/<your-cutom-file-here>.conf```
+
+* If you have ``http`` pu the scripts in ``<VirtualHost *:80>``
+* If you have ``https``, put the scripts in boht ``<VirtualHost *:80>`` and ``<VirtualHost *:443>``
+
+## Step 3: Accessing the virtualized app
+
+To access the virtualized service, open  your browser and type in
+
+``
+http://<YOUR-SERVER-ADDRESS OR DOMAIN>/SL/ or https://<YOUR-SERVER-ADDRESS OR DOMAIN>/SL/
+``
+
+e.g., ```http://1.1.1.1/sl/``` or ```https://1.1.1.1/sl/```
+
+
+
