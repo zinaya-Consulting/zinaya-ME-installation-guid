@@ -460,6 +460,7 @@ sudo systemctl restart SL_dhs_data
 # Patching the system
 when there is changes required to the whole system e.g., Bug fix, new version. You will be provided with 2 or 1 container and/or a Python file.
 
+**NOTE**: Always patch files must be in `Zinaya-ME` on the server before you start the patching process. 
 ## 0. Patching the system
 ⚠️When provided with `patch.py` you will have to run it before you proceed with other patches
 load `patch.py` to the server in `Zinaya-ME` directory, then excute the file.
