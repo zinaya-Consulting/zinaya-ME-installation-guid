@@ -458,7 +458,16 @@ sudo systemctl restart SL_dhs_data
 ``` 
 
 # Patching the system
-when there is changes required to the whole system e.g., Bug fix, new version. You will be provided with 2 or 1 container.
+when there is changes required to the whole system e.g., Bug fix, new version. You will be provided with 2 or 1 container and/or a Python file.
+
+## 0. Patching the system
+⚠️This file when is provided you will have to run it before you proceed with other patches
+load `patch.py` to the server in `Zinaya-ME` directory, then excute the file.
+
+```
+python3 patch.py
+```
+
 
 ## 1. Patching Dashboard
 When there is updates for the dashboard, you will be provided with new container named `dhs_dashboard.tar`. Once this is recieved, load/transfer the .tar file the server where Zinaya-ME is installed and excete the following commands in sequence.
