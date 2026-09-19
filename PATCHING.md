@@ -1,4 +1,4 @@
-# zinaya-ME-patch-guid
+# zinaya-ME-patch-guide
 
 **Zinaya ME** is a containerized monitoring and evaluation dashboard platform designed for managing, tracking, and visualizing survey fieldwork operations in real time.
 
