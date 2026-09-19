@@ -3,9 +3,9 @@
 **Zinaya ME** is a containerized monitoring and evaluation dashboard platform designed for managing, tracking, and visualizing survey fieldwork operations in real time.
 
 # Patching the system
-you are provided with a zip file containing `dhs_dashboard.tar` and `docker_patch.sh`, extract the zip and copy those two files to the server in the same folder named `Zinaya-ME` or `<country-code>-Zinay-ME`.
+you are provided with a zip file containing `dhs_dashboard.tar` and `docker_patch.sh`, extract the zip and copy those two files to the server in the same folder named `Zinaya-ME` or `<country-code>-Zinaya-ME`.
 
-**NOTE**: Always patch files must be in `Zinaya-ME` or `<country-code>-Zinay-ME` on the server before you start the patching process.
+**NOTE**: Always patch files must be in `Zinaya-ME` or `<country-code>-Zinaya-ME` on the server before you start the patching process.
 
 ## 1. Patching the docker
 #### step 1: give docker_patch.dsh required permissions
