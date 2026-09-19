@@ -505,7 +505,7 @@ sudo systemctl daemon-reload
 ```
 sudo systemctl restart SL_dhs_data
 ```
-# Virtualizing the system access via appache
+# Virtualizing the system access via apache
 
 Since the monitoring tool is mapped to the server address with the port, accessing it to the public with address and the port is not secure. 
 
