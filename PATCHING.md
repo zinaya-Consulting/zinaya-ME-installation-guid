@@ -34,7 +34,7 @@ sudo systemctl daemon-reload
 ```
 #### 3. Restart the dashboard service file
 
-here you need to restart the dashboard to reflect the changes, run `sudo service dhs_dashboard restart` or `sudo service <country-code>_dhs_dashboard restart` 
+here you need to restart the dashboard to reflect the changes, run `sudo systemctl restart dhs_dashboard` or `sudo systemctl restart <country-code>_dhs_dashboard` 
 ```
 sudo systemctl restart dhs_dashboard
 ```
